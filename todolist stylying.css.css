@@ -1,0 +1,92 @@
+body {
+    font-family: Arial, sans-serif;
+    background: url('D:\downloads\to do list.jpg') no-repeat center center fixed;
+    background-size: cover;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    background: rgba(255, 255, 255, 0.9); /* Semi-transparent background for better readability */
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    margin-top: 0;
+    text-align: center;
+}
+
+.task-entry {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.task-entry input, .task-entry select, .task-entry button {
+    padding: 10px;
+    margin-right: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.task-entry button {
+    background-color: #28a745;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+.task-entry button:hover {
+    background-color: #218838;
+}
+
+.task-list ul {
+    list-style: none;
+    padding: 0;
+}
+
+.task-list li {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background-color: #fff;
+}
+
+.task-list li.completed {
+    text-decoration: line-through;
+    color: #aaa;
+}
+
+.task-actions button {
+    margin-left: 5px;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+}
+
+.task-actions .complete-btn {
+    background-color: #007bff;
+    color: #fff;
+}
+
+.task-actions .delete-btn {
+    background-color: #dc3545;
+    color: #fff;
+}
+
+.task-actions .complete-btn:hover {
+    background-color: #0056b3;
+}
+
+.task-actions .delete-btn:hover {
+    background-color: #c82333;
+}
